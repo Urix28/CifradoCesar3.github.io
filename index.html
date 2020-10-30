@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html onpaste="return false" ondragstart="return false;" ondrop="return false;" oncontextmenu="return false" onkeydown="return efe(event)">
+<head>
+	<meta charset="utf-8">
+	<link rel="icon" type="image/x-icon" href="img/1.svg">
+	<title>Cifrado Cesár</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+  <script type="text/javascript" src="js/eje1.js"></script>
+  <script type="text/javascript" src="js/validar.js"></script>
+</head>
+<body onpaste="return false" ondragstart="return false;" ondrop="return false;" oncontextmenu="return false" >
+<header>
+<img id="java" src="img/1.svg">
+<h1>Cifrado Cesár</h1>
+ </header>
+
+ 
+<form name="formulario" method="post" action="" onsubmit="return numeros(this)" onpaste="return false" ondragstart="return false;" ondrop="return false;">
+   <p>Ingresa la cadena</p>
+   <textarea id="cadena"  onpaste="return false" ondragstart="return false;" ondrop="return false;" oncontextmenu="return false" onkeypress=""></textarea>
+   <br>
+   <br>
+   <p>
+      Ingresa el número de desplazamiento
+   </p>
+   
+   <input type='number' id="desp"  name='shift' value='' min='1' max="10000" onkeypress="return validacion(event,this);">
+   <br>
+   <br>
+   <p>      Cadena Final
+   </p>
+   
+   <textarea  id="resultado" onpaste="return false" ondragstart="return false;" ondrop="return false;" oncontextmenu="return false" onkeypress="" ></textarea>
+   <br>
+   <br>
+   <br>
+   <input type="button" value="Cifrar" onclick="codificar()">
+   
+   <br>
+   <br>
+   
+        <input type="button" value="Decifrar" onclick="decodificar()"></p>
+
+   <br>
+   <br>
+   <input type="reset" name="borrar" value="Borrar">
+    
+        <script src="js/logica.js"></script>
+
+  </form>
+</body>
+</html>
