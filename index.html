@@ -6,7 +6,7 @@
 	<link rel="icon" type="image/x-icon" href="img/1.svg">
 	<title>Cifrado Cesár</title>
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
-  <script type="text/javascript" src="js/eje1.js"></script>
+
   <script type="text/javascript" src="js/validar.js"></script>
 </head>
 <body onpaste="return false" ondragstart="return false;" ondrop="return false;" oncontextmenu="return false" >
@@ -18,20 +18,20 @@
  
 <form name="formulario" method="post" action="" onsubmit="return numeros(this)" onpaste="return false" ondragstart="return false;" ondrop="return false;">
    <p>Ingresa la cadena</p>
-   <textarea id="cadena"  onpaste="return false" ondragstart="return false;" ondrop="return false;" oncontextmenu="return false" onkeypress=""></textarea>
+   <textarea id="cadena"  onpaste="return false" ondragstart="return false;" ondrop="return false;" oncontextmenu="return false" onkeypress="return validaLetras(event,this)"></textarea>
    <br>
    <br>
    <p>
       Ingresa el número de desplazamiento
    </p>
    
-   <input type='number' id="desp"  name='shift' value='' min='1' max="10000" onkeypress="return validacion(event,this);">
+   <input type='number' id="desp"  name='shift' value='' min='1' max="10000" onpaste="return false" ondragstart="return false;" ondrop="return false;" oncontextmenu="return false" onkeypress="return validacion(event,this);">
    <br>
    <br>
    <p>      Cadena Final
    </p>
    
-   <textarea  id="resultado" onpaste="return false" ondragstart="return false;" ondrop="return false;" oncontextmenu="return false" onkeypress="" ></textarea>
+   <textarea  id="resultado" readonly onpaste="return false" ondragstart="return false;" ondrop="return false;" oncontextmenu="return false"  onkeypress="return validaLetras(event,this)"></textarea>
    <br>
    <br>
    <br>
